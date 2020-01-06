@@ -19,7 +19,10 @@ class Controller {
             case 'home':
                 $this->showConteudoInicialView();
                 break;
-            case 'login':
+
+case 'primeiea':
+$this->showPrimeira();
+break;            case 'login':
                 $this->showTelaLoginView();
                 break;
             case 'logout':
@@ -35,6 +38,8 @@ class Controller {
         
         include 'view/asso.php';
     }
+private function showPrimeira(){
+include 'view/primeira.php';
     
     private function showConteudoInicialView(){
         include 'view/conteudoInicialView.php';
