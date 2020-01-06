@@ -25,7 +25,15 @@ class Controller {
             case 'logout':
                 $this->showTelaDeLogoutView();
                 break;
+            
+            case 'asso':
+                $this->assoShow();
         }
+    }
+    
+    private function assoShow(){
+        
+        include 'view/asso.php';
     }
     
     private function showConteudoInicialView(){
